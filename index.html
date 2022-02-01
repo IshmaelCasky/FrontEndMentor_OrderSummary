@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            height: 100vh;
+            display: flex;
+            background-color: hsl(225, 100%, 94%);
+            align-items: center;
+            justify-content: center;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        
+        .__container {
+            background-color: rgb(255, 255, 255);
+            width: 20.5rem;
+            height: 34rem;
+            border-radius: 1.5rem;
+        }
+        
+        .__orderImage {
+            background: url("images/illustration-hero.svg") no-repeat center center;
+            background-size: contain;
+            width: 20.5rem;
+            height: 10rem;
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+        }
+        
+        .__orderSummary {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+        
+        .__orderHeader {
+            text-align: center;
+            color: hsl(223, 47%, 23%);
+            font-size: 1.5rem;
+            font-weight: 1000;
+        }
+        
+        .__orderParagraph {
+            color: hsl(224, 23%, 55%);
+            align-self: center;
+            text-align: center;
+            line-height: 1.5rem;
+            margin-top: 1rem;
+            width: 80%;
+        }
+        
+        .__optionHSize {
+            font-size: 0.9rem;
+        }
+        
+        .__optionPSize {
+            font-size: 0.9rem;
+            align-self: center;
+            color: hsl(224, 23%, 55%);
+        }
+        
+        .__orderOptionContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .__orderOption {
+            display: flex;
+            margin-top: 1rem;
+            background-color: hsl(225, 100%, 98%);
+            width: 18rem;
+            height: 5rem;
+            border-radius: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #__iconMusic {
+            background: url("images/icon-music.svg") no-repeat center center;
+            background-size: contain;
+            width: 3rem;
+            height: 3rem;
+            margin-left: 1rem;
+        }
+        
+        .__orderType {
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+        }
+        
+        #__changebtn {
+            color: hsl(245, 75%, 52%);
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-right: 1rem;
+        }
+        
+        .__orderConcelOption {
+            display: flex;
+            flex-direction: column;
+            height: 9rem;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .__proceedOrder {
+            display: flex;
+            background-color: hsl(245, 75%, 52%);
+            text-decoration: none;
+            color: white;
+            width: 17.5rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .__cancelOrder {
+            display: flex;
+            width: 17.5rem;
+            height: 3rem;
+            margin-top: 0.7rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #__proceed {
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+        
+        #__cancel {
+            font-size: 0.9rem;
+            font-weight: 1000;
+            color: hsl(224, 23%, 55%);
+        }
+        
+        #__changebtn:hover {
+            color: hsl(245, 83%, 68%);
+        }
+        
+        .__proceedOrder:hover {
+            background-color: hsl(245, 83%, 68%);
+        }
+        
+        #__cancel:hover {
+            color: hsl(223, 47%, 23%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="__container">
+
+                <div class="__orderImage">
+                </div>
+
+                <div class="__orderSummary">
+                    <h1 class="__orderHeader">Order Summary</h1>
+                    <p class="__orderParagraph">You can now listen to millions of songs, audiobooks, and postcasts on any device anywhere you like!</p>
+                </div>
+
+                <div class="__orderOptionContainer">
+                    <div class="__orderOption">
+                        <div id="__iconMusic"></div>
+                        <div class="__orderType">
+                            <h1 class="__orderHeader __optionHSize">Annual Plan</h1>
+                            <p class="__optionPSize">$59.99/year</p>
+                        </div>
+                        <a id="__changebtn" href="#">Change</a>
+                    </div>
+                </div>
+
+                <div class="__orderConcelOption">
+                    <div class="__proceedOrder" href="#">
+                        <a id="__proceed">Proceed to Payment</a>
+                    </div>
+
+                    <div class="__cancelOrder" href="#">
+                        <a id="__cancel">Cancel Order</a>
+                    </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
